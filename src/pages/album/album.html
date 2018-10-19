@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal" margin-right (click)='verDetalleDisco();'>
+                <ion-icon name="add-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>Discos</ion-title>
+    </ion-toolbar>
+</ion-header>
+  
+
+  <ion-content padding>
+
+    <ion-list>
+        <ion-item-sliding *ngFor="let disco of discos">
+            <ion-item (click)='verDetalleDisco(disco);'>
+                <h2 text-uppercase>{{disco.banda}}</h2>
+                <h3>{{disco.nombre}}</h3>
+                <p>{{disco.descripcion}}</p>
+            </ion-item>
+            <ion-item-options side="right">
+                <button ion-button color="red" (click)='eliminarDisco(disco);'>
+                    <ion-icon name="trash"></ion-icon>
+                Eliminar
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+  </ion-content>
+
+

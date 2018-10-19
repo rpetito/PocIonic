@@ -1,0 +1,7 @@
+{
+  "name": "PocIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Detalle Disco
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+    
+
+<ion-content padding>
+    
+    <!-- <ion-list> -->
+        <ion-item>
+            <ion-input type="text" placeholder="Banda" [(ngModel)]="disco.banda"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Album" [(ngModel)]="disco.nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Descripcion" [(ngModel)]="disco.descripcion"></ion-input>
+        </ion-item>
+    <!-- </ion-list> -->
+
+    <button ion-button full style="margin-top:64px" (click)='guardarDisco();'>{{textoBoton}}</button> 
+
+
+</ion-content>
